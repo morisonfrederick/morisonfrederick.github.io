@@ -1,0 +1,231 @@
+*, *::before,::after{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-template-areas: 'one one one one'
+                        'two three three three';
+    
+}
+.navigation{
+    grid-area: one;
+}
+.header .search button img,
+.header .icons .create img,
+.header .icons .bell img{
+    height: 20px;
+    width: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px 0;
+}
+.header a img{
+    height: 20px;
+    width: 90px;
+}
+.header .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+.header .search input{
+    height: 40px;
+    width: 515.2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: solid 1px #ccc;
+}
+.header .search .search-btn{
+    height: 40px;
+    width: 64px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid 1px #ccc;
+    border-left: none;
+    margin-right: 20px;
+}
+.header .search .voice-search{
+    border-radius: 50%;
+    height: 41px;
+    width: 41px;
+    border: none;
+}
+.header .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+.header .icons .create,
+.header .icons .bell{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+}
+.header .icons .bell{
+
+}
+.header .icons .profile-pic img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+
+}
+
+
+/*=================Category starts here=============*/
+body{
+    margin: 0px;
+    position: relative;
+}
+.categories{
+    position:sticky;
+    padding: 10px;
+    margin-top: 1p;
+}
+.categories .all,
+.categories .category{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    height: 32;
+}
+.categories .all{
+    background-color: black;
+    color: white;
+    width: 40.48px;
+    
+}
+/*=====================nav end here======================*/
+
+/*==================== side menu==========================*/
+.side-menu{
+    grid-area: two;
+    width: 204px;
+    height: 1500px;
+    margin-left: 10px;
+}
+/*.home-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}*/
+.home,
+.shorts,
+.subscriptions{
+    display: flex;
+    padding: 5px;
+    margin: 5px solid black;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 204px;
+    height: 40px;
+}
+.home{
+    
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.home-icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.home-text{
+    margin-left: 15px;
+    color: black;
+}
+.you{
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+}
+.you div{
+    font-size: 25px;
+    margin-left: 10px;
+    color: black;
+}
+.you p{
+    color: black;
+}
+#subscriptions p{
+    font-weight: bold;
+}
+
+/*=======================Videos start here======================*/
+.videos{
+    grid-area: three;
+    background-color: #f9f9f9;
+}
+.vidio-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1280px;
+    
+}
+.vidio-section{
+    padding: 10px;
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.thumb-nail img{
+    width: 399px;
+    height: 225px;
+    border-radius: 10px;
+}
+.thumb-nail{
+    position: relative;
+}
+.thumb-nail::before{
+    content: attr(time-stamp);
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000000cc;
+    padding: 3px 4px;
+
+}
+.vidio-bottom-section{
+    display: flex;
+    justify-content: start;
+}
+.vidio-bottom-section a img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.video-details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.video-details .video-title{
+    padding-bottom: 10px;
+    /*background-color: aquamarine;*/
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.video-channel-name,
+.meta-data{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
