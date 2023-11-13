@@ -2,6 +2,9 @@
     box-sizing: border-box;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+.main{
+    position: relative;
+}
 .wrapper{
     display: grid;
     grid-template-areas: 'one one one one'
@@ -10,6 +13,11 @@
 }
 .navigation{
     grid-area: one;
+    position: fixed;
+    width: 100%;
+    background-color:white;
+    z-index: 1;
+
 }
 .header .search button img,
 .header .icons .create img,
@@ -68,9 +76,6 @@
     border: none;
     background-color: transparent;
 }
-.header .icons .bell{
-
-}
 .header .icons .profile-pic img{
     border-radius: 50%;
     height: 40px;
@@ -112,7 +117,10 @@ body{
     grid-area: two;
     width: 204px;
     height: 1500px;
+    margin-top: 103px;
     margin-left: 10px;
+    position:fixed;
+    overflow: scroll;
 }
 /*.home-menu{
     display: flex;
@@ -165,16 +173,15 @@ body{
 }
 
 /*=======================Videos start here======================*/
-.videos{
-    grid-area: three;
-    background-color: #f9f9f9;
-}
+
 .vidio-container{
+    grid-area: three;
+    margin-top: 103px;
+    margin-left: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1280px;
-    
+    width: 1280px;  
 }
 .vidio-section{
     padding: 10px;
